@@ -75,17 +75,16 @@ function operatorClick(op) {
 }
 function removeNumber() {
   if (firstOperation) {
-    if (firstOperation.length > 0) {
-      firstOperation = firstOperation.slice(0, -1);
+    if (firstNumber.length > 0) {
+      firstNumber = firstNumber.slice(0, -1);
       display.textContent = firstNumber;
     }
     return;
   }
   if (secondNumber.length > 0) {
-    secondNumber = secondNumber.toString() + number.toString();
+    secondNumber = secondNumber.slice(0, -1);
+    display.textContent = secondNumber;
   }
-
-  display.textContent = secondNumber;
 }
 function addNumber(number) {
   if (firstOperation) {

@@ -1,23 +1,33 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+}
 #calc {
   flex-wrap: wrap;
   display: flex;
   margin: auto;
   width: 500px;
-  height: 800px;
+  height: 745px;
   border: 2px solid black;
   box-sizing: border-box;
 }
+.clr {
+  background-color: #ecb27093;
+}
 #display {
   flex-basis: 100%;
-  height: 175px;
+  height: 120px;
   border-bottom: 2px solid black;
   box-sizing: border-box;
-  font-size: xx-large;
+  font-size: 100px;
   text-align: end;
-  background-color: rgba(177, 176, 176, 0.562);
+  background-color: #d3d4d4;
 }
 button {
-  background-color: blue;
+  background-color: #8e9dcc;
   aspect-ratio: 1;
   flex-basis: 25%;
   font-weight: bold;
@@ -25,12 +35,12 @@ button {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .button-operator {
-  background-color: orange;
+  background-color: #f4f1bb;
 }
 .equals {
   flex-basis: 50%;
   aspect-ratio: 0;
-  background-color: orange;
+  background-color: #f4f1bb;
 }
 .button-dot {
   font-size: 20px;
